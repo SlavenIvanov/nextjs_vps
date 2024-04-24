@@ -160,7 +160,7 @@ const swr = createStaleWhileRevalidateCache({
 export async function dbTest(): Promise<TestResult> {
 	const result = await swr('test', async () => await runTests(), {
 		maxTimeToLive: 1000 * 60 * 2, // 2 minutes
-		minTimeToStale: 1000 * 60 * 1, // 1 minute
+		minTimeToStale: 1000 * 5, // 5 seconds
 	});
 
 	if (result.value === undefined) {

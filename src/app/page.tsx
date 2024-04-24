@@ -5,9 +5,7 @@ import Images from '@/components/tests/images';
 export default function Home() {
 	return (
 		<main className="flex min-h-screen flex-col p-10 space-y-6">
-			<h1 className="font-bold text-xl">
-				VPS vs Vercel - Ashley Rudland's VPS Playground
-			</h1>
+			<h1 className="font-bold text-xl">👌🐸 🏋️</h1>
 
 			<p>
 				Source code:{' '}

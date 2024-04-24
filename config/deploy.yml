@@ -2,7 +2,8 @@
 service: server
 image: slavenbg/nextjsvps
 servers:
-    - VPS_HOSTNAME
+    # - <%= ENV["VPS_HOSTNAME"] %>
+    - 64.23.210.216
 registry:
     username:
         - KAMAL_REGISTRY_USERNAME
