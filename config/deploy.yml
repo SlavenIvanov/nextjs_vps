@@ -1,8 +1,8 @@
 # config/deploy.yml
 service: server
-image: ashleyrudland87/ash
+image: slavenbg/nextjsvps
 servers:
-    - <%= ENV["VPS_HOSTNAME"] %>
+    - VPS_HOSTNAME
 registry:
     username:
         - KAMAL_REGISTRY_USERNAME
@@ -10,4 +10,4 @@ registry:
         - KAMAL_REGISTRY_PASSWORD
 port: 3000
 volumes:
-  - "data:/data"
+    - 'data:/data'
